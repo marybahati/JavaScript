@@ -1,0 +1,42 @@
+var d = "dog"
+undefined
+ var name ="noon"
+
+undefined
+var name ="noon";
+console .log(name);
+VM232:2 noon
+undefined
+ var obj1 = {}
+undefined
+var obj2 = { name:'Lovelace', subject: 'js' }
+undefined
+obj1
+{}
+obj2
+{name: "Lovelace", subject: "js"}
+obj2.name
+"Lovelace"
+obj2.subject
+"js"
+obj1.name
+undefined
+var greetings = 'how are you';
+undefined
+console.log(greetings);
+VM474:1 how are you
+undefined
+console.info('you are doing good');
+VM518:1 you are doing good
+undefined
+alert(how are you?');
+VM577:1 Uncaught SyntaxError: missing ) after argument list
+alert('How are you Noon?')
+undefined
+console.info('I love you so much')
+VM656:1 I love you so much
+undefined
+confirm('Are you sure');
+false
+confirm('Are you sure');
+true
