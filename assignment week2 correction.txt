@@ -1,0 +1,11 @@
+ASSIGNMENT WEEK2
+Declaration-is creating a variable using the word “var” which allocates storage for 
+                      that variable of which the variable has no value so it technically has the 
+                      value of undefined.
+                      E.g var z
+Initialization-is the specification of the value to be stored in an object.
+                        E.g var z = 5;
+Definition-it’s naming a function and specify what it should do when called upon.
+                    E.g function myName(a, b) {
+                                      return a * b;
+                                  }
