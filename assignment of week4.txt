@@ -1,0 +1,29 @@
+var fruits={'grapes':30,'melon':50,'apples':60}
+
+undefined
+
+var quantity=2
+
+undefined
+
+var price=fruits['melon'] * 2
+
+undefined
+
+
+
+function calculateCost(fruitname,quantity){
+
+var quantity=2
+
+fruits ={'grapes':30,'melon':50,'apples':60}
+
+console.log(quantity+ 'melon'+ 'for Ksh'+price);
+}
+
+undefined
+
+calculateCost('melon',2)
+
+
+2 melon for Ksh100
