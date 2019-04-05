@@ -1,0 +1,78 @@
+function getGrade(marks) {
+
+  var marks;
+
+ 
+ switch(true) {
+ 
+   case (marks <= 100 && marks >= 80):
+
+       return grade = 'A';
+
+        break;
+ 
+   case (marks <= 79 && marks >= 70):
+
+       return grade = 'B';
+
+         break;
+
+    case (marks <= 69 && marks >= 60):
+
+      return grade = 'C';
+
+         break;
+
+     case (marks <= 59 && marks >= 50):
+ 
+       return grade = 'D';
+ 
+          break;
+
+     case (marks <= 40 && marks >= 0):
+
+       return grade = 'E';
+
+        break;
+
+
+
+    default:
+
+      return 'F';
+
+
+}
+
+return grade;
+
+}
+
+
+undefined
+
+
+
+getGrade(85)
+
+"A"
+
+
+getGrade(75)
+
+"B"
+
+
+getGrade(67)
+
+"C"
+
+
+getGrade(56)
+
+"D"
+
+
+getGrade(38)
+
+"E"
