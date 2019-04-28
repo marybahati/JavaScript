@@ -1,0 +1,26 @@
+class KioskCalc {
+  constructor(fruit,quantity){
+    this.fruit=fruit;
+    this.quantity=quantity;
+    this.fruitPriceList = { "orange": 30, "mango": 15, "avocado": 40 }; 
+    
+  }
+
+    
+getTotalCost( ){
+  var cost =this.fruitPriceList[this.fruit]*this.quantity;
+  return this.quantity+ " " + this.fruit+ " "+"for Ksh"+ " " + cost;
+
+  }
+}
+   var kioskCalc1 = new KioskCalc("avocado",5);
+  
+
+console.log(kioskCalc1.getTotalCost());
+   
+
+ "5 avocado for Ksh 200"  
+
+
+
+
