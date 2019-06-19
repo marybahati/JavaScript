@@ -1,0 +1,22 @@
+
+
+var body=document.body
+body.style.backgroundColor="silver"
+
+var head=document.getElementById("title")
+head.style.color="green"
+
+var h=document.getElementsByTagName("h3")
+for(var i=0;i<h.length;i++){
+  h[i].style.textTransform="upperCase"
+}
+
+var node=document.createElement("li")
+var text=document.createTextNode("pineapple")
+node.appendChild(text)
+document.getElementById("fruList").appendChild(node)
+
+var node=document.createElement("li")
+var msg=document.createTextNode("cabbage")
+node.appendChild(msg)
+document.getElementById("vegList").appendChild(node)
