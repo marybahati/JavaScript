@@ -1,0 +1,101 @@
+	//HTML CODE//
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title id=>Greens Kiosk</title>
+</head>
+<body>
+  <h1 id="title">Welcome to Greens Kiosk</h1>
+  <p>We sell fruits and vegetables</p>
+  <button class="collapse"><h3>Fruits</h3></button>
+  <ul id="fruList">
+    <li>Mangoes</li>
+    <li>Bananas</li>
+    <li>Water Melons</li>
+  </ul>
+  <input type="text" id="add">
+    <button id="bt" onClick=fruList.append(addFruit())>Submit</button>
+    </input>
+  
+    <button class="collapse2"><h3>Vegetables</h3></button>
+  <ul id="vegList">
+    <li>Onions</li>
+    <li>Tomatoes</li>
+    <li>Kales</li>
+  </ul>
+  
+    <input type="text" id="veg">
+    </input>
+
+</body>
+</html>
+
+
+	//JAVASCRIPT CODE
+
+const changeColor=()=>{
+  const titleColor = document.getElementById("title");
+  titleColor.style.color=
+  titleColor.style.color==="green"?"silver":"green"; 
+}
+setInterval(changeColor,1000);
+
+var coll = document.getElementsByClassName("collapse");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var coll = document.getElementsByClassName("collapse2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var fruit=document.getElementById("add")
+
+function addFruit(){
+  return fruit.value
+}
+add.addEventListener("onClick",()=> alert (addFruit()))
+
+
+
+var vege=document.getElementById("veg")
+veg.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+var vege=document.getElementById("veg")
+var inputval=vege.value
+var list=document.getElementById("vegList")
+var li=document.createElement("li")
+var text=document.createTextNode(inputval)
+li.appendChild(text)
+list.appendChild(li)
+
+
+  }
+});
+
+
+
+
