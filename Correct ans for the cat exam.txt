@@ -1,0 +1,38 @@
+(A) class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+ addProduct(productId, name, price, quantity){
+    let product = {productId:productId,name:name,price:price, quantity: quantity}
+    this.products.push(product)
+    return this.products
+  }
+}
+let mumMboga = new MumMboga();
+mumMboga.addProduct(1,"Tomato",20,5);
+mumMboga.addProduct(2,"kales",40,6);
+mumMboga.addProduct(3,"cabbage",45,9);
+console.log(mumMboga.products);
+
+
+
+[[object Object] {
+  name: "Tomato",
+  price: 20,
+  productId: 1,
+  quantity: 5
+}, [object Object] {
+  name: "kales",
+  price: 40,
+  productId: 2,
+  quantity: 6
+}, [object Object] {
+  name: "cabbage",
+  price: 45,
+  productId: 3,
+  quantity: 9
+}]

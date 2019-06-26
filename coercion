@@ -1,0 +1,17 @@
+newtab?rlz=1C1CHBF_enKE836KE836&ie=UTF-8:8 SW registered
+var a = "apple"
+undefined
+typeof a
+"string"
+var b = Number(a);
+undefined
+b
+NaN
+var c = "100";
+undefined
+var d = Number(c);
+undefined
+d
+100
+typeof d
+"number"

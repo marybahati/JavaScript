@@ -1,0 +1,54 @@
+prompt('what is your name');
+"Marian Noon Kamau"
+var name = prompt('what is your name?');
+alert('your name is ' + name);
+undefined
+var a = 2;
+undefined
+var a = a + 3;
+undefined
+a = a + 3;
+8
+var a = 2;
+undefined
+a += 3;
+5
+a -=3;
+2
+a *=3;
+6
+c = 3;
+3
+c++
+3
+c
+4
+c
+4
+var z =5;
+undefined
+z++
+5
+z
+6
+ var marks =84;
+undefined
+var clearedfee = true;
+undefined
+marks >= 80 && clearedfee;
+true
+marks >= 50 && clearedfee;
+true
+marks >= || clearedfee;
+VM1208:1 Uncaught SyntaxError: Unexpected token ||
+marks >=80 || clearedfee;
+true
+marks >= 80 ? console.log('PASS') : console.log('FAIL);
+VM1331:1 Uncaught SyntaxError: Invalid or unexpected token
+var obj3 = { age: 40 }
+undefined
+'age' in obj3;
+true
+marks >= 80 ? console.log('PASS') : console.log('FAIL');
+VM1403:1 PASS
+undefined

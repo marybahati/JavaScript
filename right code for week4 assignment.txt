@@ -1,0 +1,26 @@
+function calculateFruitcost(fruitName,quantity){
+
+var fruits={'banana':20,'melon':30,'apple':40};
+
+var price=fruits[fruitName]*quantity;
+
+return quantity +' '+ fruitName + ' '+ 'for KES' +price;
+
+}
+
+undefined
+
+
+calculateFruitcost('melon',2)
+
+"2 melon for KES60"
+
+
+calculateFruitcost('apple',2)
+
+"2 apple for KES80"
+
+
+calculateFruitcost('banana',2)
+
+"2 banana for KES40"

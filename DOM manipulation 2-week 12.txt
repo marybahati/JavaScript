@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+  #pic {
+    width: 250px
+  }</style>
+</head>
+<body>
+<img id="pic" src="https://i.pinimg.com/originals/cf/d1/8d/cfd18d3d48d985999a13d54da664d4f3.jpg">
+</body>
+</html>
+
+
+JAVASCRIPT
+
+pic.onclick = () => 
+  alert("clicked")
+
+pic.onmouseover = () => 
+alert("mouse over")
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+  #pic {
+    width: 160px
+  }</style>
+</head>
+<body>
+  <div onclick="alert('parent div clicked')">
+<img id="pic" src="https://i.pinimg.com/originals/cf/d1/8d/cfd18d3d48d985999a13d54da664d4f3.jpg">
+  </div>
+  <!-- above is an event bubbling btwn the div and img -->
+  
+  <!-- <input onkeydown="alert('key down')" /> -->
+  <input type="text" id="input" />
+  <button id="my" >Submit</button>
+  
+  <input type="text" id="msg" />
+  <button id="save" >Submit</button>
+  
+</body>
+</html>
+
+
+
+JAVASCRIPT
+
+pic.onclick = () =>{ 
+  alert("clicked")};
+
+// pic.onmouseover = () => {
+// alert("mouse over")};
+
+my.onclick = () => {
+  var el=document.getElementById("input")
+  alert(el.value)
+  
+}
+
+save.onclick = () => {
+  var show=document.getElementById("msg")
+  alert(show.value)
+  
+}
+
+
+pic.addEventListener('click',()=> alert('baby clicked'),{capture:true})
+pic.addEventListener('mouseover',()=> console.log('mouse over'))
+
+
+
+
+
+
+pic.onclick = () =>{ 
+  alert("clicked")};
+
+// pic.onmouseover = () => {
+// alert("mouse over")};
+
+my.onclick = () => {
+  var el=document.getElementById("input")
+  alert(el.value)
+  
+}
+
+save.onclick = () => {
+  var show=document.getElementById("msg")
+  alert(show.value)
+  
+}
+
+
+pic.addEventListener('click',()=> alert('baby clicked'),{capture:true})
+pic.addEventListener('mouseover',()=> console.log('mouse over'))
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <p> First</p>
+  <p> Second</p>
+  <p> Third</p>
+  
+</body>
+</html>
+
+
+JAVASCRIPT
+
+var ps=document.getElementsByTagName("p")
+
+ps[1].innerHTML="Second updated"
+console.log(ps[1].textContent)

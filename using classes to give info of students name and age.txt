@@ -1,0 +1,36 @@
+class Lovelace {
+  constructor(){
+    this.name=null;
+      this.age=null;
+  }
+  setName(name) {
+    this.name=name; 
+  }
+  
+  setAge(age) {
+    this.age=age; 
+  }
+  
+  getName() {
+    return this.name
+  }
+   getAge() {
+    return this.age
+  } 
+}
+let student1 = new Lovelace();
+let student2 = new Lovelace();
+
+
+student1.setName("Noon");
+alert(student1.getName());
+
+
+student2.setName("Kamau");
+alert(student2.getName());
+
+student1.setAge("20");
+alert(student1.getAge());
+
+student2.setName("25");
+alert(student2.getName());

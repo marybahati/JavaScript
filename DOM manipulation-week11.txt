@@ -1,0 +1,63 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="d1">
+    <p id="p1">First Paragraph</p>
+   <p class="p2">Second Paragraph</p>
+    
+  </div>
+   
+</body>
+</html>
+
+
+JAVASCRIPT
+
+var div =document.getElementById("d1")
+
+var p1=document.getElementById("p1")
+console.log(p1.textContent)
+
+var many = document.getElementsByTagName("p")
+console.log(many[0].textContent)
+
+var p=document.getElementById("p1")
+p.innerHTML="First paragraph updated"
+
+var p=document.getElementById("p1")
+p.innerHTML="First paragraph updated again"
+// var p2=document.getElementsByClassName("p2")
+// setTimeOut(() =>p2[0].innerHtml="First paragraph updated again",3000)
+
+var body=document.body
+body.style.background="silver"
+
+many[0].style.color="green"
+many[1].style.color="green"
+
+var p3=document.createElement("p")
+var text=document.createTextNode("Third Paragraph")
+p3.appendChild(text)
+var div= document.getElementById("d1")
+div.appendChild(p3)
+p3.style.color="green"
+
+p1[1].onClick = () => alert("clicked)
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            

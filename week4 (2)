@@ -1,0 +1,14 @@
+var being = Object.assign({}, human)
+undefined
+human
+{name: "joy", age: 22, gender: "female"}
+function getName() {
+	return "Noon Kamau"
+}
+undefined
+getName()
+"Noon Kamau"
+var myName= getName()
+undefined
+myName
+"Noon Kamau"

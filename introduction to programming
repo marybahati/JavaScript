@@ -1,0 +1,47 @@
+var a = "100";
+undefined
+var b = a * 2;
+undefined
+b
+200
+var a = "0";
+undefined
+var b = a * 2;
+undefined
+b
+0
+"100" ==100
+true
+ // this is a single line comment
+undefined
+/* this is a
+multiline
+comment
+*/
+undefined
+var cars = [] // cars to be used for fee calculation
+undefined
+var cars = []; /* list of cars to be used
+for parking
+fee calculation
+*/
+undefined
+  var amount = 101;
+undefined
+if (amount > 100) {
+    let amount = 200;
+    amount = amount * 2;
+    console.log(amount);
+}
+VM691:4 400
+undefined
+if (amount > 100);
+undefined
+let amount =200;
+VM752:1 Uncaught SyntaxError: Identifier 'amount' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM752:1
+var amount = 101;
+undefined
+if (amount > 100);
+undefined

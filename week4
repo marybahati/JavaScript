@@ -1,0 +1,93 @@
+Date()
+"Thu Mar 28 2019 18:50:38 GMT+0300 (East Africa Time)"
+var today = new Date()
+undefined
+today
+Thu Mar 28 2019 18:52:22 GMT+0300 (East Africa Time)
+var dob = '2000';
+undefined
+typeof dod
+"undefined"
+typeof dob
+"string"
+Number (dob)
+2000
+typeof dob2
+"undefined"
+var dob2 = Number(dob)
+undefined
+typeof dob2
+"number"
+string(dob2)
+VM1269:1 Uncaught ReferenceError: string is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1269:1
+String(dob2)
+"2000"
+Boolean(dob)
+true
+Boolean(dob2)
+true
+var a = null
+undefined
+typeof a
+"object"
+var person = {
+name; 'mary noon',
+VM1506:2 Uncaught SyntaxError: Unexpected token ;
+var person = {
+name; 'mary noon',
+age: 40,
+VM1535:2 Uncaught SyntaxError: Unexpected token ;
+var person = {
+name; 'mary noon',
+age: 40,
+gender: 'male'
+}
+VM1560:2 Uncaught SyntaxError: Unexpected token ;
+var person = {
+name: 'mary noon',
+age: 40,
+gender: 'male'
+}
+undefined
+person.name
+"mary noon"
+person.age
+40
+person.gender
+"male"
+person.age = 22
+22
+person.age
+22
+person['gender'] = 'female'
+"female"
+person.gender
+"female"
+person.name = 'proffesor kioni'
+"proffesor kioni"
+person.name
+"proffesor kioni"
+person
+{name: "proffesor kioni", age: 22, gender: "female"}
+var human = person
+undefined
+human
+{name: "proffesor kioni", age: 22, gender: "female"}
+human.name = 'joy'
+"joy"
+human
+{name: "joy", age: 22, gender: "female"}
+var being = object.assign(human)
+VM1930:1 Uncaught ReferenceError: object is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM1930:1
+var being = object.assign(human)
+VM1982:1 Uncaught ReferenceError: object is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM1982:1
+var being = object.assign({}, human)
+VM2026:1 Uncaught ReferenceError: object is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM2026:1

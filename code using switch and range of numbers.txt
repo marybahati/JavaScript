@@ -1,0 +1,37 @@
+function getGrade(marks) {
+  var score =parseInt (marks / 10);
+  var results;
+  switch(score){
+    case 10:
+    case 9:
+    case 8:
+      results = 'A';
+      break;
+    case 7:
+      results ='B';
+      break;
+    case 6:
+      results = 'C';
+      break;
+    case 5:
+      results = 'D';
+      break;
+    case 4:
+    case 3:
+    case 2:
+    case 1:
+    case 0:
+      results = 'E';
+      break;
+    default:
+      result = 'F'
+  
+      
+      
+      
+  }
+  return results;
+}
+var myMarks = 80;
+var response = getGrade(marks);
+console.log(response);

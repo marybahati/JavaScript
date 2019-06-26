@@ -1,0 +1,8 @@
+function getName(){
+  return "NOON KAMAU"
+}
+console.log(name);
+function getPerson (funcName){
+  console.log(funcName());
+}
+getPerson(getName)

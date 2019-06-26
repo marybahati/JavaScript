@@ -1,0 +1,95 @@
+class MumMboga {
+  
+(A)  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+ addProduct(productId, name, price, quantity){
+    let product = {productId:productId,name:name,price:price, quantity: quantity}
+    this.products.push(product)
+    return this.products
+  }
+}
+let mumMboga = new MumMboga();
+console.log(mumMboga.addProduct("Tunaweza","cabbage",150,3));
+
+let mumMboga2 = new MumMboga();
+console.log(mumMboga.addProduct("Likodep","kales",60,5));
+
+console.log(mumMboga,mumMboga2);
+
+
+
+
+(B) class MumMboga {
+constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+
+   
+   removeProduct(productId){
+    let product = {productId:productId}
+     this.products.pop(product)
+    return this.products
+  }
+ }
+
+
+
+
+let mumMboga = new MumMboga();
+console.log(mumMboga.removeProduct("Tunaweza","cabbage",150,3,));
+console.log(mumMboga);
+
+
+
+(C) class MumMboga {
+constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+
+ updateProduct(id,name,farmer,phone,address){
+    var farm = {Id:id,farmName:name,farmerName:farmer,phoneNo:phone,box:address}
+    this.farms.push(farm)
+    return this.farms
+  }
+ }
+
+
+
+
+let mumMboga = new MumMboga();
+console.log(mumMboga.removeProduct.splice(2,"Carrots"));
+console.log(mumMboga);
+
+(D)class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+ setProduct(productId) {
+     this.product=product; 
+  }
+  getProduct(productId){
+    let product = {productId:productId}
+     this.products.pop(product)
+    return this.products
+  }
+ 
+  
+}
+let mumMboga = new MumMboga();
+products.setProduct("Tunaweza","cabbage",150,3);
+alert(product.getName());
+
