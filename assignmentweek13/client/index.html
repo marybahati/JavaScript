@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+   <title>Greens Kiosk</title>
+   <script type="text/JavaScript">
+       fetch("http://127.0.0.1:5000/products")
+       .then(response =>response.json())
+       .then(response =>{
+           response.forEach(item => {
+               var li=document.getElementById("products")
+               var list=document.createElement("li")
+               var msg=document.createTextNode(item.name)
+               list.appendChild(msg)
+               li.appendChild(list)  
+           });
+           console.log(response)
+       })
+
+
+
+       fetch("http://127.0.0.1:5000/products/fruits")
+       .then(response =>response.json())
+       .then(response =>{
+           response.forEach(item => {
+               var li=document.getElementById("fruList")
+               var list=document.createElement("li")
+               var msg=document.createTextNode(item.name)
+               list.appendChild(msg)
+               li.appendChild(list)  
+           });
+           console.log(response)
+       })
+
+
+       fetch("http://127.0.0.1:5000/products/vegetables")
+       .then(response =>response.json())
+       .then(response =>{
+           response.forEach(item => {
+               var li=document.getElementById("vegList")
+               var list=document.createElement("li")
+               var msg=document.createTextNode(item.name)
+               list.appendChild(msg)
+               li.appendChild(list)  
+           });
+           console.log(response)
+       })
+   </script>
+</head>
+
+<body>
+   <h1 id="title">Welcome to Greens Kiosk</h1>
+   <p>We sell fruits and vegetables</p>
+   <h2>Products</h2>
+   <ul id="products">
+       <!-- Show products list from API -->
+   </ul>
+   <h3>Fruits</h3>
+   <ul id="fruList">
+       <!-- Show fruits from API -->
+   </ul>
+   <h3>Vegetables</h3>
+   <ul id="vegList">
+       <!-- Show vegetables from API -->
+   </ul>
+</body>
+
+</html>
