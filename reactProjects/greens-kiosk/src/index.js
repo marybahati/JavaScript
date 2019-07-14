@@ -4,12 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const myProfile=<div>
-<h1>My Profile</h1>
-<p>Name:Mary Noon Kamau</p>
-<p>Gender:Female</p>
-</div>
-ReactDOM.render(myProfile, document.getElementById('root'));
+
+ReactDOM.render(<App gender="Female"/>, document.getElementById('root'));
+
+
 //above const myprofile is a JSX code..calling myProfile in reactDom.render
 
 
